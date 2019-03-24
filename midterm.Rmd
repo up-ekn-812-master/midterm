@@ -10,7 +10,7 @@ geometry: margin=1in
 
 _There are 65 points available on this problems set. It will be graded out of 50 i.e. there are 15 bonus points available._
 
-**Due Date: Friday, March 29 at 3.00 PM**
+**Due Date: Friday, April 5th at 3.00 PM**
 
 1. One important feature of the demand for durable goods is that expectations of future prices are relevant in ways that they are not for nondurables. Suppose you are considering what type of car to buy, and you know that you will drive 20,000 km each year for the next three years. After three years have passed, you will sell the car, and let's assume you know you will get a resale price of R100,000. Also, assume that the real interest rate is 0\%.
 
