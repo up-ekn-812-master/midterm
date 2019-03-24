@@ -1,0 +1,71 @@
+---
+title: 'EKN-812: Midterm'
+author:
+date: 
+output: pdf_document
+bibliography: ../../../../../library.bib
+biblio-style: authordate1
+geometry: margin=1in
+---
+
+_There are 65 points available on this problems set. It will be graded out of 50 i.e. there are 15 bonus points available._
+
+**Due Date: Friday, March 29 at 3.00 PM**
+
+1. One important feature of the demand for durable goods is that expectations of future prices are relevant in ways that they are not for nondurables. Suppose you are considering what type of car to buy, and you know that you will drive 20,000 km each year for the next three years. After three years have passed, you will sell the car, and let's assume you know you will get a resale price of R100,000. Also, assume that the real interest rate is 0\%.
+
+Now, consider the choice between two cars:
+
+- a Toyota Prius, which costs R490,000 and uses 3.5l/100km; and
+- a VW Polo, which costs R280,000 and uses 5l/100km.
+
+Assume the price of fuel this year will be R15/l, but for years two and three, the price may change to some unknown level $p$. That is, the price will be $p$ in both year two and year three. 
+
+If you are risk-neutral, what must the expected price $E[p]$ be such that buying a Prius is the cost-minimizing choice? What if you planned to drive 80,000 km each year?
+
+\hfill [10 points]
+
+2. Consider a population of identical workers who face a choice between two occupations: farming and mining. Working as a farmer is safe, but working as a miner carries a risk of death of $p$. Death carries a utility of zero, and each worker's utility function is $u(c) = c^{\alpha}$ for some $\alpha \in (0,1)$.
+
+ If farmers are paid a wage of $w_F$ (think of this as being determined by the price of output on international markets), what will wages for miners be?
+
+\hfill [10 points]
+
+3. Restaurants sell not just food but also drinks to their clients. Suppose there are $N$ restaurants which can sell food, $x$, and alcohol, $y$. Alcohol is supplied elastically to the restaurant industry at price $p_a$, and each restaurant $i$ can produce $x$ meals at a cost of $c_i(x)$:
+
+ $$
+c_i(x_i) = \frac{\alpha_ix_i^{1+\theta^{-1}}}{1 + \theta^{-1}}
+ $$
+
+ (a) What is restaurant $i$'s _total_ cost of producing $x_i$ meals and $y_i$ drinks?
+ 
+ (b) What is the marginal cost of meals for restaurant $i$? What is the marginal cost of selling a drink for such a restaurant?
+ 
+ (c) Suppose a population of $M$ identical consumers have quasilinear preferences over a consumption aggregate $c$ and the two components of dining out (meals and drinks):
+ $$
+ u(c, x, y) = c + \frac{v^{1-\varepsilon^{-1}}}{1 - \varepsilon^{-1}}
+ $$
+ where $v = \min\{x, \beta y\}$ is a composite good representing "dining out". Here, $\beta > 0$ is some given constant.
+
+ Given the price of a restaurant meal $p_x$, and the price of a drink when dining out $p_y$, what is the (minimized) unit cost of $v$? That is, what is 
+ $$
+ p_v(p_x, p_y) = \min_{x, y} p_xx + p_yy \text{ s.t. } v(x,y) \geq 1
+ $$
+ 
+ (d) What are the optimal choices of $x$ and $y$? Does the income distribution in the population matter for your answer? If so, how?
+
+**Hint: consider the "second-stage" utility maximization problem for the consumer of choosing $v$ and $c$. What is the budget constraint in this problem?**
+
+ (e) Let $x^*_i$ be the number of meals, and $y^*_i$ the number of drinks, served by the $i$-th restaurant. How would you define an equilibrium here? Write down the market-clearing conditions, allowing for the possibility that the restaurants differ in their $\alpha_i$. You should end up with four equations in four unknowns (two aggregate quantities and two prices).^[Formally, there are $2N + 2$ unknowns, but we can determine the distribution of output across firms from the individual supply curves that you determined in (b) above.]
+
+ (f) From now on, you can assume that all the restaurants have $\alpha_i = 1$. (Then, you can drop the subscript $i$ because all firms will produce $x^*$.) Specializing the market-clearing conditions you wrote down in (d) above, can you show that there is a unique equilibrium?
+
+ (g) In the special case where $\theta = \varepsilon$, find the equilibrium price of meals. 
+
+ (h) How does the price of alcohol affect the price of meals? Is this a supply-side mechanism, or a demand-side one?
+
+ **Hint: consider how an increase in the price of drinks would affect not just the price but also the quantity of meals.**
+
+ (i) Now suppose the local government charges restaurants a fee $f$ to sell alcohol. What are industry profits? How does $f$ affect the number of restaurants in the long run? You can again assume that $\theta = \varepsilon$.
+
+\hfill [$9 \times 5 = 45$ points]
