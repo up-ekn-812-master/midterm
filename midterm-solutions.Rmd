@@ -177,10 +177,10 @@ The interpretation is straightforward: consumers like to consume meals and drink
 \begin{align*}
 \frac{\theta}{p_x}\frac{\partial p_x}{\partial p_a}&=-\epsilon(\frac{1}{p_x+\beta^{-1}p_a})(\frac{\partial p_x}{\partial p_a}+\beta^{-1})\\
 \iff \theta(\frac{p_a}{p_x}\frac{\partial p_x}{\partial p_a})&=-\epsilon \Big[\frac{p_x}{p_x+\beta^{-1}p_a}.\frac{p_a}{p_x}\frac{\partial p_x}{\partial p_a}+\frac{\beta^{-1}p_a}{p_x+\beta^{-1}p_a} \Big]\\
-\iff (\theta+\epsilon(\frac{p_x}{p_x+\beta^{-1}p_a}))\frac{\partial log p_x}{\partial log p_a}&=-\epsilon \frac{\beta^{-1}p_a}{p_x+\beta^{-1}p_a}\\
-\implies \frac{\partial log p_x}{\partial log p_a}&=\frac{\epsilon S_y}{\theta+\epsilon S_x}
+\iff (\theta+\epsilon(\frac{p_x}{p_x+\beta^{-1}p_a}))\frac{\partial \log p_x}{\partial \log p_a}&=-\epsilon \frac{\beta^{-1}p_a}{p_x+\beta^{-1}p_a}\\
+\implies \frac{\partial \log p_x}{\partial \log p_a}&=\frac{\epsilon S_y}{\theta+\epsilon S_x}
 \end{align*}
-where $S_y$ and $S_x$ are the cost shares of y and x in the overall price of "dining out", $p_v$. 
+where $S_y$ and $S_x$ are the cost shares of $y$ and $x$ in the overall price of "dining out", $p_v$. 
 
 This tells us that if $S_y\simeq 0$, so people don't like to drink all that much with their meals, the price of meals won't be much affected by shocks to $p_a$. 
 
