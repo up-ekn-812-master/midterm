@@ -1,0 +1,211 @@
+---
+title: "EKN-812-Midterm memo"
+author:
+date: "April , 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Question 1
+
+We want to establish the expected price of gas that would make the purchase of the Prius, that is more expensive but consumes less, less costly than the Polo, that is less expensive but consumes more.
+
+The total cost of owning the prius is : 
+
+\begin{align*}
+TC_{Prius}&=(490000-100000)+\frac{3,5l}{100km}.20000km.(15R/l+2p(R/l))\\
+&=390000+(3.5).200(15+2p)\\
+&=390000+ 10 500 +1400p.
+\end{align*}
+
+For the polo, we get total cost of: 
+\begin{align*}
+TC_{Polo}&=(280000-100000)+\frac{5l}{100km}.20000km.(15R/l+2p(R/l))\\
+&=180000+5.200(15+2p)\\
+&=180000+ 15000 +2000p.
+\end{align*}
+
+We buy the Prius if $TC_{Prius}\leq TC_{Polo}$, that is: 
+\begin{align*}
+390000+ 10 500 +1400E[p] &\leq 180000+ 15000 +2000E[p]\\
+\iff 205500&\leq 600E[p]\\
+\implies 342.5&\leq E[p]
+\end{align*}
+
+What if we drove 80000km? Then:
+\begin{align*}
+TC_{Prius}&\leq TC_{Polo}\\
+390000+(3.5).800.(15+2E[p]) &\leq 180000+5.800.(15+2E[p])\\
+192000 &\leq 2400E[p]\\
+\implies 80&\leq E[p]
+\end{align*}
+
+The more we drive, lower the expected price of fuel needs to be to make the more fuel-efficient car the best choice. 
+
+# Question 2
+
+We pose that the wage of miners is $w_m$, while the wage of farmers $w_f$ is given. 
+
+Consumption is equated to income, with utility given by $u(c)=c^\alpha$. As such, the expected utility if a workers chooses farming is $w_f^\alpha$. 
+
+Choosing mining carries a risk of gaining zero utility with probability p. As such the expected utility for choosing mining is : 
+
+\begin{align*}
+p.0+(1-p)w_m^\alpha=(1-p)w_m^\alpha
+\end{align*}
+
+Workers must be indifferent, otherwise either one sector or the other will not be able to hire anymore. So we set: 
+
+\begin{align*}
+(1-p)w_m^\alpha&=w_f^\alpha\\
+\implies w_m&=\frac{w_f}{(1-p)^{1/\alpha}}\\
+\iff \frac{w_m}{w_f}&=(1-p)^{-1/\alpha}
+\end{align*}
+
+Notice that the relative wage of miners is larger when $p$ is larger. This is called a "compensating differential": miners have to be paid more to make up for the increasing risks of the job. 
+
+# Question 3
+
+\noindent(a) The total cost is the cost of meals as given by the cost functions $c_i$  plus the cost of drinks. The latter are supplied elastically at cost $p_a$ hence we have a total cost $TC$ of : 
+$$TC (x_i,y_i)=TC_i=\frac{\alpha_i x_i^{1+\theta^{-1}}}{1+\theta^{-1}}+p_a y_i$$
+
+\noindent(b) From the latter expression, we can derive the marginal costs of meals and drinks: 
+
+\begin{align*}
+MC_{x,i}=\frac{\partial TC_i}{\partial x_i}&=\alpha_i x_i^{\theta^{-1}}\\
+MC_{y,i}&=p_a
+\end{align*}
+
+These give us the (inverse) supply curves of the $i^{th}$ firm. Notice that the suply of y is perfectly elastic: firms are indifferent about the quantity they sell (they just sell at cost $p_a$), but they will not supply any $y_i$ at $p_y<p_a$, and they will try to sell $y_i=+\infty$ at $p_y>p_a$. 
+
+Notice also that if we wanted to get the supply of $x_i$ by firm i, we would set $p_x=\alpha_ix_i^{\theta^{-1}}$ and solve: we get $x_i^*(p_x)=(\frac{p_x}{\alpha_i})^\theta$. Notice finally that $\theta$ is the elasticity of supply. 
+
+
+\noindent(c) The only way to produce $v = 1$ is with one unit of $x$ and $\beta y = 1 \iff y=\frac{1}{\beta}$, so $p_v=p_x+\beta^{-1}p_y$.
+
+\noindent(d) Given $p_v$ from (c) above, the consumer's "second stage" problem is: 
+
+\begin{align*}
+max \ c+\frac{v^{1-\epsilon^{-1}}}{1-\epsilon^{-1}}\\
+\text{s.t} \ c+p_v.v\leq m_j
+\end{align*}
+where $m_j$ is consumer j's budget. 
+
+Then we get: $v^*=p_v^{-\epsilon}=(p_x+\beta^{-1}p_y)^{-\epsilon}$,
+and so $x_j^*=v_j^*=(p_x+\beta^{-1}p_y)^{-\epsilon}$
+
+and $\beta y_j^*=v_j^* \implies y_j^*=\beta^{-1}(p_x+\beta^{-1}p_y)^{-\epsilon}$.
+
+Notice how $m_j$, the consumer's wealth level, plays no role here (at least at an interior solution). With quasilinear preferences, all the income effects load onto the "numeraire" good- in this case, $c$. 
+
+
+\noindent(e) There are two goods here, drinks and meals. Let $X^S$ be the total quantity supplied of meals, and similarly, $X^D$ the aggregate quantity demanded of meals. Define $Y^D$ and $Y^S$ similarly as the total quantity supplied and demanded of drinks. Of course these quantities depend on prices. 
+
+Now we need to find $(X^*,Y^*,p_x^*,p_y^*)$ such that : 
+\begin{align*}
+X^*&=X^S(p_x^*,p_y^*)\\
+X^*&=X^D(p_x^*,p_y^*)\\
+Y^*&=Y^S(p_x^*,p_y^*)\\
+Y^*&=Y^S(p_x^*,p_y^*)
+\end{align*}
+
+The market demand for $X$ is $$X^D(p_x,p_y)=\sum_{j=1}^M x_j^*(p_x,p_y)=M(p_x+\beta^{-1}p_y)^{-\epsilon}$$
+
+The market supply of $X$ is $$X^S(p_x,p_y)=\sum_{i=1}^N x_i^*(p_x,p_y)=\sum_{i=1}^N(\frac{p_x}{\alpha_i})^\theta$$
+
+The market demand for $Y$ is $$Y^D(p_x,p_y)=\sum_{j=1}^My_j^*(p_x,p_y)=M\beta^{-1}(p_x+\beta^{-1}p_y)^{-\epsilon}$$
+
+The market supply for $Y$ is a bit subtle: recall that firms will just sell any quantity at marginal cost- in this case, $p_a$. So we know the equilibrium price of drinks will just be $p_y^*=p_a$.
+
+So, our market clearing conditions are : 
+\begin{align}
+X^*&=\sum_{i=1}^N(\frac{p_x^*}{\alpha_i})^\theta\\
+X^*&=M(p_x^*+\beta^{-1}p_y^*)^{-\epsilon}\\
+Y^*&=M\beta^{-1}(p_x^*+\beta^{-1}p_y^*)^{-\epsilon}\\
+p_y^*&=p_a
+\end{align}
+
+Importantly, notice that we only imposed that $p_x = p_x^*$ after deriving demand and supply. We will (later) want to solve for $X^*, Y^*, p^*$ and $\ p^*_y$.
+
+This is a generic approach: first we optimize on the part of consumers or firms, set supply = demand, and _then_ solve for the equilibrium prices and quantities. 
+
+
+\noindent(f) Now, we drop the heterogeneity across firms. So we can specialise the equilibrium conditions to: 
+\begin{align}
+X^*&=N(p_x^*)^\theta\\
+X^*&=M(p_x^*+\beta^{-1}p_y^*)^{-\epsilon}\\
+Y^*&=M\beta^{-1}(p_x^*+\beta^{-1}p_y^*)^{-\epsilon}\\
+p_y^*&=p_a
+\end{align}
+
+The only tricky part is finding the equilibirum price of meals, $p^*_x$. But using (5) and (6) and substituting $p_y^*=p_a$ from (8), we get: 
+\begin{align*}
+Np_x^\theta &=M(p_x+\beta^{-1}p_a)^{-\epsilon} \\
+\iff p_x^\theta(p_x+\beta^{-1}p_a)^{\epsilon}&=\frac{M}{N}
+\end{align*}
+
+If $\theta=\epsilon$, we have $p_x(p_x+\beta^{-1}p_a)=(\frac{M}{N})^{1/\theta}$, which is quadratic in $p_x \implies p_x^2+\beta^{-1}p_a.p_x-(\frac{M}{N})^{1/\theta}=0$.
+
+Notice that a real root always exists, and $$p_x^*=\frac{1}{2}\Big[\beta^{-1}p_a\pm \sqrt{(\beta^{-1}p_a)^2+4(\frac{M}{N})^{\theta^{-1}}}\Big]$$
+
+Clearly, only the positive root makes sense. 
+
+If we did not have $\theta=\epsilon$, we could still show that there is a unique equilibrium. We'd have : 
+\begin{align*}
+Np_x^\theta = M(p_x+\beta^{-1}p_a)^{-\epsilon} & \iff &  \log N +\theta \log p_x = \log M - \epsilon \log (p_x+\beta^{-1}p_a) 
+\end{align*}
+
+Let us say $LHS(p_x)=\log N+ \theta \log p_x$
+
+and $RHS(p_x) = \log M-\epsilon \log (p_x+\beta^{-1}p_a)$. Graphically, the two functions look as follows:
+
+\begin{figure}[!htb]
+        \center{\includegraphics[width=\textwidth]
+        {plot1.png}}
+      \end{figure}
+      
+\pagebreak      
+
+Notice that as $p_x \rightarrow 0$, then $LHS \rightarrow -\infty$, and as $p_x\rightarrow \infty$ then $LHS\rightarrow \infty$. 
+
+On the other hand as $p_x \rightarrow 0$, then the $RHS \rightarrow logM-\epsilon log(\beta^{-1} p_a)>-\infty$, and as $p_x \rightarrow \infty$, then $RHS \rightarrow -\infty$. This means that there will exist at least one equilibrium. 
+
+Further, because the RHS is decreasing in $p_x$, and the LHS is increasing in $p_x$, there is at most one equilibrium. Since we have already shown the existence, we know that there is exactly one equilibrium $p_x^*$. 
+
+
+\noindent(h) The price of alcohol is just $p_a$ (the input price facing restaurants). And, if we look back at the diagram we used to show existence and uniqueness of the equilibrium, we notice that $p_a$ only enters the expression from the RHS (the log of aggregate demand). In particular, when $p_a$ increases, theis shifts down the RHS curve, lowering both price and quantity. 
+
+The interpretation is straightofrward: consumers like to consume meals and drinks in fixed proportions. So if drinks become more expensive, this pushes down the demand for meals. 
+
+Algebraically, we could implicitly differentiate the market-clearing condition to get: 
+
+\begin{align*}
+\frac{\theta}{p_x}\frac{\partial p_x}{\partial p_a}&=-\epsilon(\frac{1}{p_x+\beta^{-1}p_a})(\frac{\partial p_x}{\partial p_a}+\beta^{-1})\\
+\iff \theta(\frac{p_a}{p_x}\frac{\partial p_x}{\partial p_a})&=-\epsilon \Big[\frac{p_x}{p_x+\beta^{-1}p_a}.\frac{p_a}{p_x}\frac{\partial p_x}{\partial p_a}+\frac{\beta^{-1}p_a}{p_x+\beta^{-1}p_a} \Big]\\
+\iff (\theta+\epsilon(\frac{p_x}{p_x+\beta^{-1}p_a}))\frac{\partial log p_x}{\partial log p_a}&=-\epsilon \frac{\beta^{-1}p_a}{p_x+\beta^{-1}p_a}\\
+\implies \frac{\partial log p_x}{\partial log p_a}&=\frac{\epsilon S_y}{\theta+\epsilon S_x}
+\end{align*}
+where $S_y$ and $S_x$ are the cost shares of y and x in the overall price of "dining out", $p_v$. 
+
+This tells us that if $S_y\simeq 0$, so people don't like to drink all that much with their meals, the price of meals won't be much affected by shocks to $p_a$. 
+
+On the other hand, if $S_y$ is larger, then $p_x$ will go down by about $-\frac{\epsilon}{\theta}$ in relative terms. Notice how large values of $\theta$ (elastic supply) weaken the price response. 
+
+
+\noindent(i) When $\theta = \epsilon$, we found the equilibrium price $p_x^*=\frac{1}{2}\Big[\beta^{-1}p_a\pm \sqrt{(\beta^{-1}p_a)^2+4(\frac{M}{N})\theta^{-1}}\Big]$ and each firm sells $x_i^*=(p_x)^\theta$ meals. Now, firms profits are: 
+\begin{align*}
+\pi_i&=p_x^*.x_i^*(p_x^*)-c(x_i^*)\\
+     &=(p_x^*)^{1+\theta}-\frac{(x_i^*)^{1+\theta^{-1}}}{1+\theta^{-1}}
+\end{align*}
+But of course, $(x_i^*)^{1+\theta^{-1}}=(p_x^*)^{1+\theta}$, so firm profits simplify to $$\pi_i=(p_x^*)^{1+\theta}[1-\frac{1}{1+\theta^{-1}}]=\frac{1}{1+\theta}(p_x^*)^{1+\theta}$$
+When we impose the fee, firm profits will be $\pi_i=\frac{(p_x^*)^{1+\theta}}{1+\theta}-f$. Since all firms are identical, industry profits are just N times firm profits. 
+
+Now, in the long run, N adjusts such that $\pi_i=0$, so this gives that the long run price $\bar{p}_x=[f(1+\theta)]^\frac{1}{1+\theta}$
+
+Now, because equilibrium prices satisfy $p_x^2+\beta^{-1}p_ap_x-(\frac{M}{N}^{1/\theta})=0$, we get, imposing $p_x=\bar{p}_x=[f(1+\theta)]^\frac{1}{1+\theta}$, that $$\bar{N}=\frac{M}{\Big[[f(1+\theta)]^{(2/(1+\theta))}+\beta^{-1}p_af(1+\theta)\Big]^\theta}$$
+
+Since the denominator is increasing in f, the long run size of the industry is decreasing in the licensing fee. 
+
